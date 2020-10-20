@@ -1,0 +1,28 @@
+<?php declare(strict_types=1);
+
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+?>
+<form data-mage-init='{"validation":{}}'>
+    <div class="control">
+        <input type="text" name="email" id="email" class="input-text"
+        placeholder="<?=__('Email Id')?>"
+        data-validate="{required:true,'validate-email':true}"/>
+    </div>
+    <button class="action primary" type="submit"><?=__('Submit')?></button>
+</form>
+</br>
+<pre class="target">
+
+</pre>
+<script type="text/x-magento-init">
+    {
+        ".target":{
+        "coffee":{
+        "base_url":"<?= $block->escapeJs($block->getBaseUrl()) ?>"
+        }
+        }
+
+    }
+</script>

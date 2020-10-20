@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Suraj_JSExample\js\script-example.js" defer="true"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="JSExample_js2" template="Suraj_JSExample::js-container.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

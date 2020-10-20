@@ -1,0 +1,100 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block;
+ */
+
+?>
+<!--<script type="text/x-magento-init">
+    {
+        "*":{
+            "Magento_Ui/js/core/app":{
+                "components":{
+                    "exampleUiComponent":{
+                        "component":"uiComponent",
+                        "template":"Suraj_KonOut/info",
+                        "children":{
+                            "child1":{
+                            "component":"uiComponent",
+                            "template":"Suraj_KonOut/info",
+                            "displayArea":"groupA"
+                            },
+                             "child2":{
+                            "component":"uiComponent",
+                            "template":"Suraj_KonOut/info",
+                            "displayArea":"groupB"
+                            },
+                             "child3":{
+                            "component":"uiComponent",
+                            "template":"Suraj_KonOut/info",
+                            "displayArea":"groupA"
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    }
+</script>-->
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "Magento_Ui/js/core/app":{
+                "components":{
+                    "startSimple":{
+                        "component":"Suraj_KonOut/js/ES-5Without2"
+
+                    }
+                }
+            }
+        }
+    }
+</script>
+<!--<div data-bind="scope:'startSimple'">
+    <h2 data-bind="text: title"></h2>
+    <pre data-bind="text: JSON.stringify(config,null,10)">
+    </pre>
+</div>-->
+<!--<div data-bind="scope:'startSimple'">
+    <pre data-bind="text: output"></pre>
+</div>
+-->
+<!--<div data-bind="scope:'startSimple'">
+    <table data-bind="foreach: exchange_rates">
+        <tr>
+            <th data-bind="i18n: Currency To"></th>
+            <th data-bind="i18n: 'Rate'"></th>
+        </tr>
+        <tr>
+        <td data-bind="text: currency_to"></td>
+        <td data-bind="text: rate"></td>
+        </tr>
+    </table>
+</div>-->
+<!--<div data-bind="scope:'startSimple'">
+    <table>
+        <tr>
+            <th data-bind="i18n: 'Currency To'"></th>
+            <th data-bind="i18n: 'Rate'"></th>
+        </tr>
+         ko foreach: exchange_rates
+        <tr>
+            <td data-bind="text: currency_to"></td>
+            <td data-bind="text: rate"></td>
+        </tr>
+       /ko
+    </table>
+</div>-->
+<div data-bind="scope:'startSimple'">
+    <h3 data-bind="text: label"></h3>
+    <table data-bind="foreach: items" >
+        <tr>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: qty"></td>
+            <td data-bind="text: price"></td>
+            <td data-bind="text: $parent.rowTotal($data)"></td>
+        </tr>
+    </table>
+    <div> Additional Charge:<span data-bind="text: additiona_charges"></span></div>
+    <strong>Total :<span data-bind="text:total()"></span></strong>
+</div>
+

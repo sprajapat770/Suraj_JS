@@ -1,0 +1,18 @@
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "Magento_Ui/js/core/app":{
+                    "components":{
+                                "clock":{
+                                    "component":"Suraj_UIMixin/js/example-clock"
+                                }
+                    }
+            }
+        }
+    }
+</script>
+<div data-bind="scope:'clock'">
+    <h2>Time</h2>
+    <div data-bind="text: getTitle()"></div>
+</div>
+
